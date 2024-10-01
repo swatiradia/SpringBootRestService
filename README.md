@@ -28,7 +28,6 @@ POST /addBook
 
 Request Body:
 
-json
 {
   "isbn": "string",
   "aisle": "string",
@@ -60,9 +59,6 @@ PUT /updateBook/{id}
 Path Variable: id - The unique ID of the book to update.
 
 Request Body:
-
-json
-
 {
   "aisle": "string",
   "author": "string",
@@ -75,8 +71,6 @@ http
 
 DELETE /deleteBook
 Request Body:
-
-json
 
 {
   "id": "string"
@@ -91,18 +85,12 @@ Response: List of all books in the library.
 Setup and Installation
 Clone the repository:
 
-bash
-
 git clone https://github.com/yourusername/spring-boot-library-management.git
 cd spring-boot-library-management
 Build the project using Maven:
 
-bash
-
 mvn clean install
 Run the application:
-
-bash
 
 mvn spring-boot:run
 Access the API at http://localhost:8080.
