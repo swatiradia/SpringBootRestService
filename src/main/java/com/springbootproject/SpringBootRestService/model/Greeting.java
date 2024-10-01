@@ -1,9 +1,10 @@
-package com.springbootproject.SpringBootRestService.controller;
+package com.springbootproject.SpringBootRestService.model;
 
 import org.springframework.stereotype.Component;
 
 // This is a simple JavaBean class that represents a Greeting object.
 // In Spring Boot, this type of class is often used to transfer data between the controller and the view layer (or API).
+// @Component marks this class as a Spring-managed component, meaning it will be automatically detected and registered as a bean in the Spring application context.
 @Component
 public class Greeting {
 

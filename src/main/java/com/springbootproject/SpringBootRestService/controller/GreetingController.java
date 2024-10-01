@@ -1,5 +1,6 @@
 package com.springbootproject.SpringBootRestService.controller;
 
+import com.springbootproject.SpringBootRestService.model.Greeting;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -12,9 +13,9 @@ import java.util.concurrent.atomic.AtomicLong;
 // instead of returning a view or template.
 @RestController
 public class GreetingController {
-// Autowired annotation makes Spring boot create object in runtime.
+// The @Autowired annotation allows Spring Boot to automatically inject an instance of the Greeting class at runtime.
     @Autowired
-     Greeting greeting;
+Greeting greeting;
 
     AtomicLong counter = new AtomicLong();
     // @GetMapping is a shortcut for @RequestMapping(method = RequestMethod.GET).
