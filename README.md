@@ -23,7 +23,9 @@ This is a Spring Boot REST service for managing a library of books. It allows us
 
 ### Add Book
 
+```http
 POST /addBook
+```
 
 **Request Body:**
 
@@ -42,48 +44,57 @@ Status 201 Created: Book added successfully.
 Status 202 Accepted: Book already exists.
 
 **Get Book**
-
+```http
 GET /getBooks/{id}
-Path Variable: id - The unique ID of the book.
-Response: The book details.
-Get Books by Author
+```
+**Path Variable:** id - The unique ID of the book.
+**Response:** The book details.
+**Get Books by Author**
 
-
+```http
 GET /getBooks/author?authorName={authorName}
-Query Parameter: authorName - The name of the author.
-Response: List of books by the author.
-Update Book
+```
+**Query Parameter:** authorName - The name of the author.
+**Response:** List of books by the author.
+**Update Book**
 
-
+```http
 PUT /updateBook/{id}
-Path Variable: id - The unique ID of the book to update.
+```
+**Path Variable:** id - The unique ID of the book to update.
 
+```http
 Request Body:
 {
   "aisle": "string",
   "author": "string",
   "book_name": "string"
 }
-Response: The updated book details.
+```
+**Response: The updated book details.**
 
-Delete Book
-http
+**Delete Book**
 
+```http
 DELETE /deleteBook
-Request Body:
+```
 
+Request Body:
+```http
 {
   "id": "string"
 }
-Response: Confirmation message on successful deletion.
+```
+**Response: Confirmation message on successful deletion.**
 
-Get All Books
-http
+**Get All Books**
 
+```http
 GET /getAllBooks
-Response: List of all books in the library.
-Setup and Installation
-Clone the repository:
+```
+**Response:** List of all books in the library.
+**Setup and Installation**
+**Clone the repository:**
 
 git clone https://github.com/yourusername/spring-boot-library-management.git
 cd spring-boot-library-management
@@ -95,11 +106,11 @@ Run the application:
 mvn spring-boot:run
 Access the API at http://localhost:8080.
 
-Logging
+**Logging**
 The application uses SLF4J for logging. Logs can be found in the console output.
 
-License
+**License**
 This project is licensed under the MIT License. See the LICENSE file for details.
 
-Contributing
+**Contributing**
 Contributions are welcome! Please open an issue or submit a pull request for any improvements or suggestions.
