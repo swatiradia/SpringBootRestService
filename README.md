@@ -63,8 +63,9 @@ PUT /updateBook/{id}
 ```
 **Path Variable:** id - The unique ID of the book to update.
 
+
+**Request Body:**
 ```http
-Request Body:
 {
   "aisle": "string",
   "author": "string",
@@ -93,7 +94,8 @@ Request Body:
 GET /getAllBooks
 ```
 **Response:** List of all books in the library.
-**Setup and Installation**
+## Setup and Installation**
+
 **Clone the repository:**
 
 git clone https://github.com/yourusername/spring-boot-library-management.git
