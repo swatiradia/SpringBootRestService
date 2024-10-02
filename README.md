@@ -33,7 +33,7 @@ POST /addBook
   "aisle": "string",
   "author": "string",
   "book_name": "string"
-} '''
+} ```
 
 **Response:**
 
