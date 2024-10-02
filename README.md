@@ -33,7 +33,7 @@ Request Body:
   "aisle": "string",
   "author": "string",
   "book_name": "string"
-}
+}```
 
 Response:
 
@@ -41,6 +41,7 @@ Status 201 Created: Book added successfully.
 Status 202 Accepted: Book already exists.
 
 Get Book
+
 ```http
 
 GET /getBooks/{id}
