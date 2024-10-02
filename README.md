@@ -23,10 +23,9 @@ This is a Spring Boot REST service for managing a library of books. It allows us
 
 ### Add Book
 
-```http
 POST /addBook
 
-Request Body:
+**Request Body:**
 
 {
   "isbn": "string",
@@ -35,26 +34,24 @@ Request Body:
   "book_name": "string"
 }```
 
-Response:
+**Response:**
 
 Status 201 Created: Book added successfully.
 Status 202 Accepted: Book already exists.
 
-Get Book
-
-```http
+**Get Book**
 
 GET /getBooks/{id}
 Path Variable: id - The unique ID of the book.
 Response: The book details.
 Get Books by Author
-http
+
 
 GET /getBooks/author?authorName={authorName}
 Query Parameter: authorName - The name of the author.
 Response: List of books by the author.
 Update Book
-http
+
 
 PUT /updateBook/{id}
 Path Variable: id - The unique ID of the book to update.
