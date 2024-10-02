@@ -34,6 +34,7 @@ POST /addBook
   "author": "string",
   "book_name": "string"
 }
+```http
 
 **Response:**
 
