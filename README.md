@@ -43,7 +43,7 @@ POST /addBook
 Status 201 Created: Book added successfully.
 Status 202 Accepted: Book already exists.
 
-**Get Book**
+### Get Book
 ```http
 GET /getBooks/{id}
 ```
@@ -58,11 +58,12 @@ GET /getBooks/author?authorName={authorName}
 **Response:** List of books by the author.
 **Update Book**
 
+### Update Book
+
 ```http
 PUT /updateBook/{id}
 ```
 **Path Variable:** id - The unique ID of the book to update.
-
 
 **Request Body:**
 ```http
@@ -74,7 +75,7 @@ PUT /updateBook/{id}
 ```
 **Response: The updated book details.**
 
-**Delete Book**
+### Delete Book
 
 ```http
 DELETE /deleteBook
