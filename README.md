@@ -28,12 +28,14 @@ POST /addBook
 **Request Body:**
 
 ```http
+
 {
   "isbn": "string",
   "aisle": "string",
   "author": "string",
   "book_name": "string"
-} ```
+}
+,,,
 
 **Response:**
 
