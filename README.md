@@ -89,13 +89,14 @@ Request Body:
 ```
 **Response: Confirmation message on successful deletion.**
 
-**Get All Books**
+### Get All Books
 
 ```http
 GET /getAllBooks
 ```
 **Response:** List of all books in the library.
-## Setup and Installation**
+
+## Setup and Installation
 
 **Clone the repository:**
 
