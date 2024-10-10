@@ -20,6 +20,9 @@ public class LibraryService {
 
 //    Method to build id
     public String buildIdMethod(String isbn, int aisle){
+        if(isbn.startsWith("Z")){
+            return ("old"+isbn+aisle);
+        }
         return isbn+aisle;
     }
 
@@ -37,6 +40,9 @@ public class LibraryService {
         }else {
             return false;
         }
+    }
 
+    public Library getBookById(String id){
+        return libraryRepository.findById(id).get();
     }
 }

@@ -75,7 +75,7 @@ public class LibraryController {
 //  @PutMapping maps HTTP PUT Request to this method.
     @PutMapping("/updateBook/{id}")
     public ResponseEntity<Library> updateBook(@RequestBody Library library, @PathVariable(value = "id") String id) {
-        Library existingBook = libraryRepository.findById(id).get();
+        Library existingBook = libraryService.getBookById(id);
         System.out.println(existingBook);
         existingBook.setAisle(library.getAisle());
         existingBook.setAuthor(library.getAuthor());
@@ -90,7 +90,8 @@ public class LibraryController {
     @DeleteMapping("/deleteBook")
     public ResponseEntity<String> deleteBook(@RequestBody Library library){
         try{
-            Library findBook = libraryRepository.findById(library.getId()).get();
+//            Library findBook = libraryRepository.findById(library.getId()).get();
+            Library findBook = libraryService.getBookById(library.getId());
             libraryRepository.delete(findBook);
             logger.info("Book is Deleted");
             return new ResponseEntity<>("Book is Successfully deleted",HttpStatus.CREATED );
