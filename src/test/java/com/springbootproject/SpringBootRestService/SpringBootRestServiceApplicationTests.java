@@ -1,10 +1,9 @@
 package com.springbootproject.SpringBootRestService;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.springbootproject.SpringBootRestService.controller.LibraryController;
-import com.springbootproject.SpringBootRestService.model.AddBookResponse;
-import com.springbootproject.SpringBootRestService.model.Library;
+import com.springbootproject.SpringBootRestService.entity.AddBookResponse;
+import com.springbootproject.SpringBootRestService.entity.Library;
 import com.springbootproject.SpringBootRestService.repository.LibraryRepository;
 import com.springbootproject.SpringBootRestService.service.LibraryService;
 import org.junit.jupiter.api.Test;

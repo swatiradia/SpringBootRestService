@@ -1,4 +1,4 @@
-package com.springbootproject.SpringBootRestService.model;
+package com.springbootproject.SpringBootRestService.entity;
 
 import org.springframework.stereotype.Component;
 

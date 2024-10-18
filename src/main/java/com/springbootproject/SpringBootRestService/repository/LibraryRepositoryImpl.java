@@ -1,6 +1,6 @@
 package com.springbootproject.SpringBootRestService.repository;
 
-import com.springbootproject.SpringBootRestService.model.Library;
+import com.springbootproject.SpringBootRestService.entity.Library;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -29,7 +29,7 @@ public class LibraryRepositoryImpl implements LibraryRepositoryCustom {
 
         // Iterates over the list of books to check if the author matches the specified authorName.
         for (Library item : books) {
-            // If the author of the book matches (case insensitive), add the book to the authorNames list.
+            // If the author of the book matches (case-insensitive), add the book to the authorNames list.
             if (item.getAuthor().equalsIgnoreCase(authorName)) {
                 authorNames.add(item);
             }

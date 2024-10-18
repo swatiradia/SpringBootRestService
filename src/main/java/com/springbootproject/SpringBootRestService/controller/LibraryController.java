@@ -1,7 +1,7 @@
 package com.springbootproject.SpringBootRestService.controller;
 
-import com.springbootproject.SpringBootRestService.model.AddBookResponse;
-import com.springbootproject.SpringBootRestService.model.Library;
+import com.springbootproject.SpringBootRestService.entity.AddBookResponse;
+import com.springbootproject.SpringBootRestService.entity.Library;
 import com.springbootproject.SpringBootRestService.repository.LibraryRepository;
 import com.springbootproject.SpringBootRestService.service.LibraryService;
 import org.slf4j.Logger;

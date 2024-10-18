@@ -1,4 +1,4 @@
-package com.springbootproject.SpringBootRestService.model;
+package com.springbootproject.SpringBootRestService.entity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

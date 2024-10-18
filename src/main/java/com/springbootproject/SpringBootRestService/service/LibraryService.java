@@ -1,5 +1,5 @@
 package com.springbootproject.SpringBootRestService.service;
-import com.springbootproject.SpringBootRestService.model.Library;
+import com.springbootproject.SpringBootRestService.entity.Library;
 import com.springbootproject.SpringBootRestService.repository.LibraryRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

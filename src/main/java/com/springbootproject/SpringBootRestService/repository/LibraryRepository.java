@@ -1,6 +1,6 @@
 package com.springbootproject.SpringBootRestService.repository;
 
-import com.springbootproject.SpringBootRestService.model.Library;
+import com.springbootproject.SpringBootRestService.entity.Library;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
